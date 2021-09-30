@@ -4,8 +4,8 @@ title = "docker-portainer"
 default:
 	@echo $(title)
 
-run:
-	docker-compose start
+start:
+	docker-compose up
 
 ps:
 	docker-compose ps
@@ -13,5 +13,11 @@ ps:
 log:
 	docker-compose logs
 
-up:
+run:
 	docker-compose up -d 
+
+restart:
+	docker-compose restart
+
+stop:
+	docker-compose stop
